@@ -60,8 +60,8 @@ int main(void)
 
 /*
 Compile & run (Unix):
-  gcc lab8/lab.c -o lab8/lab -lm
-  ./lab8/lab
+  gcc lab7/lab.c -o lab7/lab -lm
+  ./lab7/lab
 
 If your system doesn't need -lm explicitly, gcc lab.c -o lab may work,
 but -lm is the safe default for linking math functions.
