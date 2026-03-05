@@ -1,0 +1,42 @@
+
+============================
+Lab 14: eigenvalue solvers   
+Matrix A = (1/4) tridiag(1,2,1), n=5
+tol=1.0e-10, max_iters=2000
+
+PowerIteration():
+  lambda_hat = 0.933012701873103 (iters=17)
+  true lambda_max = 0.933012701892219, abs error = 1.912e-11
+
+ShiftedInverseIteration(mu=2.000):
+  lambda_hat = 0.933012701670596 (iters=60)
+  true lambda_min = 0.066987298107781, abs error = 8.660e-01
+
+ShiftedInverseIteration(mu=0.000):
+  lambda_hat = 0.066987298110873 (iters=10)
+  closest true eigenvalue to mu = 0.066987298107781, abs error = 3.092e-12
+
+RayleighQuotientIteration():
+  lambda_hat = 0.933012701892219 (iters=4)
+  closest true eigenvalue to lambda_hat = 0.933012701892219, abs error = 0.000e+00
+
+============================
+Lab 14: eigenvalue solvers   
+Matrix A = (1/4) tridiag(1,2,1), n=10
+tol=1.0e-10, max_iters=2000
+
+PowerIteration():
+  lambda_hat = 0.979746486627934 (iters=54)
+  true lambda_max = 0.979746486807249, abs error = 1.793e-10
+
+ShiftedInverseIteration(mu=2.000):
+  lambda_hat = 0.979746485993821 (iters=148)
+  true lambda_min = 0.020253513192751, abs error = 9.595e-01
+
+ShiftedInverseIteration(mu=0.000):
+  lambda_hat = 0.020253513197937 (iters=9)
+  closest true eigenvalue to mu = 0.020253513192751, abs error = 5.186e-12
+
+RayleighQuotientIteration():
+  lambda_hat = 0.920626766415591 (iters=4)
+  closest true eigenvalue to lambda_hat = 0.920626766415591, abs error = 1.110e-16
