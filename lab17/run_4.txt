@@ -1,0 +1,5 @@
+Threads   : 4
+Image size: 1000 x 1000
+Blur size : 998 x 998
+Walltime  : 0.01100016 sec
+Checksum  : 126515945
