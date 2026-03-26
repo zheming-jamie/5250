@@ -1,0 +1,11 @@
+European Call Option Pricing by Simpson + OpenMP
+------------------------------------------------
+Parameters:
+S0 = 100.000000, K = 100.000000, r = 0.050000, T = 1.000000, sigma = 0.200000
+Smax = 500.000000, N = 10000000, threads = 8
+
+Numerical Price     = 10.450583572184815
+Black-Scholes Price = 10.450583572185565
+Absolute Error      = 7.496225862269057e-13
+Relative Error      = 7.173021305930141e-14
+Wall Time           = 3.109998703002930e-01 seconds
