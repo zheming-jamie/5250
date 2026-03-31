@@ -1,0 +1,33 @@
+Lab 19: Signal normalization with OpenMP
+Requested threads = 1
+Actual threads    = 1
+N                 = 100000000
+Memory for x      = 0.745 GB
+
+============================================================
+Fine-grain: 2-norm normalization
+============================================================
+2-norm before normalization = 5.773508465363e+03
+2-norm after normalization  = 9.999999999421e-01
+Elapsed time                = 0.143000 s
+
+============================================================
+Fine-grain: max-norm normalization
+============================================================
+Max norm before normalization = 1.000000000000e+00
+Max norm after normalization  = 1.000000000000e+00
+Elapsed time                  = 0.142000 s
+
+============================================================
+Coarse-grain: 2-norm normalization
+============================================================
+2-norm before normalization = 5.773508465363e+03
+2-norm after normalization  = 9.999999999421e-01
+Elapsed time                = 0.127000 s
+
+============================================================
+Coarse-grain: max-norm normalization
+============================================================
+Max norm before normalization = 1.000000000000e+00
+Max norm after normalization  = 1.000000000000e+00
+Elapsed time                  = 0.159000 s
