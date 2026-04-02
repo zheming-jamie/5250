@@ -1,0 +1,23 @@
+sweep_threads = 1
+rep_threads = 4
+tol = 1.000e-06
+case 1 sweep points = 201
+case 2 sweep points = 301
+case 1 sweep total wall time = 91.345002 s
+case 1 sweep average wall time = 4.544527e-01 s
+case 1 sweep max wall time = 1.296000e+00 s at x0 = -0.386100
+case 2 sweep total wall time = 16.855002 s
+case 2 sweep average wall time = 5.599668e-02 s
+case 2 sweep max wall time = 1.420002e-01 s at x = 47.000000
+
+Case 1 benchmark at x0 = 0.0:
+  threads =  1, V(x0) = -7.966001062075e-01, wall_time = 6.999969e-03 s
+  threads =  2, V(x0) = -7.966001062075e-01, wall_time = 2.000093e-03 s
+  threads =  4, V(x0) = -7.965996455119e-01, wall_time = 1.599979e-02 s
+
+Case 2 benchmark at x = 50.0:
+  threads =  1, J0(x) = 5.581227310130e-02, wall_time = 1.110001e-01 s
+  threads =  2, J0(x) = 5.581227310130e-02, wall_time = 1.259999e-01 s
+  threads =  4, J0(x) = 5.581229242660e-02, wall_time = 1.570001e-01 s
+
+Benchmark CSV files: case1_benchmark.csv, case2_benchmark.csv
