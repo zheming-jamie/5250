@@ -1,3 +1,65 @@
+# Lab 21 - Pass a Baton (MPI)
+
+## Files
+- `main.c`
+- `Makefile`
+
+## Compile
+```bash
+make
+```
+
+```
+mingw32-make clean
+mingw32-make
+mpiexec -n 4 .\main.exe
+```
+
+## Run example
+```bash
+mpirun -np 4 ./main.exe
+```
+
+## Expected behavior
+- Rank 0 initializes `token = 1000`
+- Rank 0 sends to Rank 1
+- Each nonzero rank receives the token, prints a log, increments by 1, then sends it onward
+- The last rank sends the token back to Rank 0
+- Rank 0 receives the final token and prints the final value
+
+## Example output for 4 ranks
+```text
+Rank 0 sent token 1000 to Rank 1
+Rank 1 received token 1000 from Rank 0
+Rank 1 sent token 1001 to Rank 2
+Rank 2 received token 1001 from Rank 1
+Rank 2 sent token 1002 to Rank 3
+Rank 3 received token 1002 from Rank 2
+Rank 3 sent token 1003 to Rank 0
+Rank 0 received token 1003 from Rank 3
+Final token value after full trip: 1003
+```
+
+For `p` MPI processes, the final token value should be:
+```text
+1000 + (p - 1)
+```
+because ranks `1` through `p-1` each increment the token exactly once.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+fix draft save
 {
 
     "tasks": [
